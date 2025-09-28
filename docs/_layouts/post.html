@@ -20,6 +20,11 @@ layout: default
         {% endif %}
     </header>
 
+    <aside class="toc">
+        <h2>Contents</h2>
+        <nav id="toc"></nav>
+    </aside>
+
     <div class="post-content">
         {{ content }}
     </div>
@@ -43,3 +48,17 @@ layout: default
         </div>
     </footer>
 </article>
+
+<!-- Load tocbot -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.20.1/tocbot.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  tocbot.init({
+    tocSelector: '#toc',
+    contentSelector: '.post-content',
+    headingSelector: 'h2, h3',   // which headings to include
+    collapseDepth: 6,
+    scrollSmooth: true
+  });
+});
+</script>

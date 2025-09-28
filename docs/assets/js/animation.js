@@ -5,6 +5,7 @@ class GeometricAnimation {
         this.particles = [];
         this.animationId = null;
         this.theme = 'light';
+        this.mouse = { x: 0, y: 0 };
         this.init();
     }
 
@@ -13,6 +14,7 @@ class GeometricAnimation {
         this.setupParticles();
         this.animate();
         this.setupResizeListener();
+        this.setupMouseListener();
         this.updateTheme(document.documentElement.getAttribute('data-theme') || 'light');
     }
 
@@ -59,7 +61,7 @@ class GeometricAnimation {
         this.drawGrid();
 
         this.particles.forEach(particle => {
-            particle.update();
+            particle.update(this.mouse);
             particle.draw(this.ctx, this.theme);
         });
 
@@ -68,7 +70,7 @@ class GeometricAnimation {
     }
 
     drawGrid() {
-        const gridSize = 25;
+        const gridSize = 15;
         const opacity = this.theme === 'dark' ? 0.25 : 0.2;
 
         this.ctx.strokeStyle = `rgba(70, 130, 220, ${opacity})`;
@@ -123,6 +125,13 @@ class GeometricAnimation {
         });
     }
 
+    setupMouseListener() {
+        window.addEventListener('mousemove', (e) => {
+            this.mouse.x = e.clientX;
+            this.mouse.y = e.clientY;
+        });
+    }
+
     destroy() {
         if (this.animationId) {
             cancelAnimationFrame(this.animationId);
@@ -148,10 +157,29 @@ class GeometricParticle {
         this.canvasHeight = canvasHeight;
     }
 
-    update() {
+    update(mouse) {
+        // Normal floating movement (original behavior)
         this.x += this.vx;
         this.y += this.vy;
         this.rotation += this.rotationSpeed;
+
+        // Calculate distance from mouse
+        const dx = this.x - mouse.x;
+        const dy = this.y - mouse.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+
+        // Add repulsion force only when mouse is close
+        const repelRadius = 150;
+        if (distance < repelRadius && distance > 0) {
+            const force = (repelRadius - distance) / repelRadius;
+            const angle = Math.atan2(dy, dx);
+            const repelX = Math.cos(angle) * force * 5;
+            const repelY = Math.sin(angle) * force * 5;
+
+            // Apply repulsion as additional movement
+            this.x += repelX;
+            this.y += repelY;
+        }
 
         // Bounce off edges
         if (this.x < 0 || this.x > this.canvasWidth) this.vx *= -1;

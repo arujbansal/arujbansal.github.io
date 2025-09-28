@@ -46,16 +46,25 @@ class ThemeManager {
     }
 
     updateThemeIcon(theme) {
-        const themeIcon = document.querySelector('.theme-icon');
-        if (themeIcon) {
-            themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+        const moonIcon = document.querySelector('.icon-moon');
+        const sunIcon = document.querySelector('.icon-sun');
+
+        if (moonIcon && sunIcon) {
+            if (theme === 'dark') {
+                // Dark mode - show sun icon (to switch to light)
+                moonIcon.style.display = 'none';
+                sunIcon.style.display = 'block';
+            } else {
+                // Light mode - show moon icon (to switch to dark)
+                moonIcon.style.display = 'block';
+                sunIcon.style.display = 'none';
+            }
         }
     }
 
     loadSavedTheme() {
         const savedTheme = localStorage.getItem('theme');
-        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const theme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+        const theme = savedTheme || 'dark';
 
         this.setTheme(theme);
     }
