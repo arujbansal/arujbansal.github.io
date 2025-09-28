@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="blog-container">
+    <header class="blog-header">
+        <h1 class="blog-title">{{ page.title }}</h1>
+        {% if page.description %}
+            <p class="blog-description">{{ page.description }}</p>
+        {% endif %}
+    </header>
+
+    <div class="blog-grid">
+        {% for post in site.posts %}
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <div class="blog-meta">
+                        <time datetime="{{ post.date | date_to_xmlschema }}">
+                            {{ post.date | date: "%B %d, %Y" }}
+                        </time>
+                        {% if post.categories.size > 0 %}
+                            <span class="blog-category">{{ post.categories | first | capitalize }}</span>
+                        {% endif %}
+                    </div>
+
+                    <h2 class="blog-card-title">
+                        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                    </h2>
+
+                    {% if post.excerpt %}
+                        <p class="blog-excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+                    {% endif %}
+
+                    <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
+                </div>
+            </article>
+        {% endfor %}
+    </div>
+
+    {% if site.posts.size == 0 %}
+        <div class="empty-state">
+            <h2>No posts yet</h2>
+            <p>Check back soon for new articles!</p>
+        </div>
+    {% endif %}
+</div>

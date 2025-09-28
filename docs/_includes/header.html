@@ -1,0 +1,29 @@
+<header class="site-header">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="{{ '/' | relative_url }}" class="nav-logo">
+                <span class="logo-text">{{ site.title | default: "Your Name" }}</span>
+            </a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="{{ '/' | relative_url }}" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ '/blog' | relative_url }}" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                </li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+</header>
