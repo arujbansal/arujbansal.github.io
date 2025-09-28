@@ -24,10 +24,10 @@ layout: default
                             </svg>
                         </a>
                     </div>
-                    <div class="education-degree">B.S. in <a href="https://cs.duke.edu/" target="_blank" rel="noopener noreferrer" class="degree-link">Computer Science</a> and <a href="https://math.duke.edu/" target="_blank" rel="noopener noreferrer" class="degree-link">Mathematics</a></div>
+                    <div class="education-degree">B.S. in <a href="https://cs.duke.edu/" target="_blank" rel="noopener noreferrer"><span class="degree-link">Computer Science</span></a> and <a href="https://math.duke.edu/" target="_blank" rel="noopener noreferrer"><span class="degree-link">Mathematics</span></a></div>
                     <div class="education-school">
                         <img src="/assets/images/duke-logo.png" alt="Duke University" class="university-logo" onerror="this.style.display='none';">
-                        <a href="https://duke.edu/" target="_blank" rel="noopener noreferrer" class="university-link">Duke University</a>
+                        <a href="https://duke.edu/" target="_blank" rel="noopener noreferrer"><span class="university-link">Duke University</span></a>
                         <span class="location">Durham, NC, USA</span>
                     </div>
                     <div class="education-period">Aug 2023 - May 2027</div>
@@ -39,7 +39,7 @@ layout: default
 
                 <div class="work-description">
                     <p>
-                    I'm interested in algorithms and systems. In high school, I actively participated in programming competitions and reached the International Olympiad in Informatics Training Camp in India. Then, I took introductory computer architecture at Duke and got super interested in systems. My favorite classes at Duke include <a href="https://sites.google.com/view/randomized-algorithms/home" target="_blank" rel="noopener noreferrer" class="course-link">Randomized Algorithms</a>, <a href="https://cs.duke.edu/courses/compiler-construction-0" target="_blank" rel="noopener noreferrer" class="course-link">Compiler Construction</a>, <a href="https://apexlab-duke.github.io/cs550-advcomparch-fa2024/" target="_blank" rel="noopener noreferrer" class="course-link">Advanced Computer Architecture I</a>, and <a href="https://courses.cs.duke.edu/spring25/compsci590.5/index.html" target="_blank" rel="noopener noreferrer" class="course-link">Systems for Machine Learning</a>.
+                    I'm interested in algorithms and systems. In high school, I actively participated in programming competitions and reached the International Olympiad in Informatics Training Camp in India. Then, I took introductory computer architecture at Duke and got super interested in systems. My favorite classes at Duke include <a href="https://sites.google.com/view/randomized-algorithms/home" target="_blank" rel="noopener noreferrer"><span class="course-link">Randomized Algorithms</span></a>, <a href="https://cs.duke.edu/courses/compiler-construction-0" target="_blank" rel="noopener noreferrer"><span class="course-link">Compiler Construction</span></a>, <a href="https://apexlab-duke.github.io/cs550-advcomparch-fa2024/" target="_blank" rel="noopener noreferrer"><span class="course-link">Advanced Computer Architecture I</span></a>, and <a href="https://courses.cs.duke.edu/spring25/compsci590.5/index.html" target="_blank" rel="noopener noreferrer"><span class="course-link">Systems for Machine Learning</span></a>.
                     </p>
 
                     <!-- <p>
