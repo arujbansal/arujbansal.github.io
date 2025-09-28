@@ -38,7 +38,7 @@ layout: default
 
                 <div class="work-description">
                     <p>
-                    I'm interested in algorithms and systems. In high school, I actively participated in programming competitions and reached the Internaional Olympiad in Informatics Training Camp in India. Then, I took introductory computer architecture at Duke and got super interested in systems. My favorite classes at Duke include Compiler Construction, Randomized Algorithms, and Advanced Computer Architecture I.
+                    I'm interested in algorithms and systems. In high school, I actively participated in programming competitions and reached the International Olympiad in Informatics Training Camp in India. Then, I took introductory computer architecture at Duke and got super interested in systems. My favorite classes at Duke include Compiler Construction, Randomized Algorithms, and Advanced Computer Architecture I.
                     </p>
 
                     <!-- <p>

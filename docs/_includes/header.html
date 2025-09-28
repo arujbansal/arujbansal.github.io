@@ -1,5 +1,8 @@
 <header class="floating-nav">
-    <a href="{{ '/' | relative_url }}" class="floating-home">Home</a>
+    <div class="floating-nav-left">
+        <a href="{{ '/' | relative_url }}" class="floating-home{% if page.url == '/' or page.url == '/index.html' %} active{% endif %}">Home</a>
+        <!-- <a href="{{ '/blog' | relative_url }}" class="floating-blog{% if page.url contains '/blog' %} active{% endif %}">Blog</a> -->
+    </div>
     <button class="floating-theme-toggle" id="themeToggle" aria-label="Toggle theme">
         <span class="theme-icon">
             <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
