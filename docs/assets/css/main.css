@@ -313,6 +313,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .university-logo {
@@ -320,6 +321,46 @@ body {
   height: 18px;
   object-fit: contain;
   border-radius: 2px;
+}
+
+.degree-link {
+  color: var(--text-primary);
+  text-decoration: underline;
+  text-decoration-color: var(--text-tertiary);
+  transition: var(--transition-smooth);
+}
+
+.degree-link:hover {
+  color: var(--accent-primary);
+  text-decoration-color: var(--accent-primary);
+}
+
+.university-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+.university-link:hover {
+  color: var(--text-primary);
+}
+
+.location {
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+  margin-left: 1rem;
+}
+
+.course-link {
+  color: var(--text-secondary);
+  text-decoration: underline;
+  text-decoration-color: var(--text-tertiary);
+  transition: var(--transition-smooth);
+}
+
+.course-link:hover {
+  color: var(--text-primary);
+  text-decoration-color: var(--text-primary);
 }
 
 .profile-name {
@@ -810,6 +851,18 @@ body {
   content: '📍';
   margin-right: 0.4rem;
   font-size: 0.8rem;
+}
+
+/* Override for Duke University location */
+.education-school .location {
+  margin-left: 0;
+}
+
+.education-school .location::before {
+  content: '—';
+  margin-right: 0.4rem;
+  font-size: inherit;
+  color: inherit;
 }
 
 .timeline-item.left .location {
