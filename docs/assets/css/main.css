@@ -324,25 +324,33 @@ body {
 }
 
 .degree-link {
-  color: var(--text-primary);
+  color: var(--text-primary) !important;
   text-decoration: underline;
   text-decoration-color: var(--text-tertiary);
   transition: var(--transition-smooth);
 }
 
 .degree-link:hover {
-  color: var(--accent-primary);
+  color: var(--accent-primary) !important;
   text-decoration-color: var(--accent-primary);
 }
 
+.degree-link:visited {
+  color: var(--text-primary) !important;
+}
+
 .university-link {
-  color: var(--text-secondary);
+  color: var(--text-secondary) !important;
   text-decoration: none;
   transition: var(--transition-smooth);
 }
 
 .university-link:hover {
-  color: var(--text-primary);
+  color: var(--text-primary) !important;
+}
+
+.university-link:visited {
+  color: var(--text-secondary) !important;
 }
 
 .location {
@@ -352,15 +360,19 @@ body {
 }
 
 .course-link {
-  color: var(--text-secondary);
+  color: var(--text-secondary) !important;
   text-decoration: underline;
   text-decoration-color: var(--text-tertiary);
   transition: var(--transition-smooth);
 }
 
 .course-link:hover {
-  color: var(--text-primary);
+  color: var(--text-primary) !important;
   text-decoration-color: var(--text-primary);
+}
+
+.course-link:visited {
+  color: var(--text-secondary) !important;
 }
 
 .profile-name {
