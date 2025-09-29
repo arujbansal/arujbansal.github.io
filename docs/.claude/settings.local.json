@@ -3,7 +3,8 @@
     "allow": [
       "Bash(mkdir:*)",
       "Bash(bundle install)",
-      "Bash(bundle exec:*)"
+      "Bash(bundle exec:*)",
+      "Bash(git restore:*)"
     ],
     "deny": [],
     "ask": []

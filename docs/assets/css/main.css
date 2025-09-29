@@ -645,6 +645,14 @@ span.course-link:hover, .course-link:hover {
   text-decoration-color: var(--text-primary);
 }
 
+.course-award {
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+  font-style: italic;
+  margin-top: 0.25rem;
+  padding-left: 1rem;
+}
+
 .youtube-link {
   color: var(--text-secondary);
   text-decoration: none;

@@ -138,10 +138,13 @@ layout: default
                     <div class="course-item">
                         <div class="course-name">Teaching Assistant, Duke University</div>
                         <div class="course-details">
-                            <div class="course-subitem"><a href="https://courses.cs.duke.edu/fall25/compsci512/">1. <span class="course-link">Graduate Distributed Systems</span> (COMPSCI 512, Fall 2025)</a></div>
-                            <div class="course-subitem"><a href="https://courses.cs.duke.edu/spring25/compsci310/">2. <span class="course-link">Operating Systems</span> (COMPSCI 310, Spring 2025)</a></div>
-                            <div class="course-subitem"><a href="https://courses.cs.duke.edu/spring25/compsci356/">3. <span class="course-link">Computer Networks</span> (COMPSCI 356, Spring 2025)</a></div>
-                            <div class="course-subitem"><a href="https://sites.duke.edu/compsci_201_001_sp24/">4. <span class="course-link">Data Structures and Algorithms</span> (COMPSCI 201, Spring 2024)</a></div>
+                            <div class="course-subitem"><a href="https://courses.cs.duke.edu/fall25/compsci512/">1. <span class="course-link">COMPSCI 512 Distributed Systems, Fall '25</span></a> <em>(Graduate)</em></div>
+                            <div class="course-subitem">
+                                <a href="https://courses.cs.duke.edu/spring25/compsci310/">2. <span class="course-link">COMPSCI 310 Operating Systems, Spring '25</span></a>
+                                <div class="course-award">Outstanding Teaching Assistant Award</div>
+                            </div>
+                            <div class="course-subitem"><a href="https://courses.cs.duke.edu/spring25/compsci356/">3. <span class="course-link">COMPSCI 356 Computer Networks, Spring '25</span></a></div>
+                            <div class="course-subitem"><a href="https://sites.duke.edu/compsci_201_001_sp24/">4. <span class="course-link">COMPSCI 201 Data Structures and Algorithms, Spring '24</span></a></div>
                         </div>
                     </div>
 
