@@ -615,8 +615,8 @@ span.course-link:hover, .course-link:hover {
   font-weight: 500;
   display: flex !important;
   align-items: center !important;
+  justify-content: space-between !important;
   line-height: 1.5 !important;
-  gap: 0.25rem !important;
 }
 
 .course-details {
@@ -704,6 +704,13 @@ span.course-link:hover, .course-link:hover {
 
 .youtube-link:hover .youtube-icon svg {
   fill: #cc0000 !important;
+}
+
+.subscriber-count {
+  font-style: italic !important;
+  color: var(--text-tertiary) !important;
+  font-size: 0.85rem !important;
+  margin-left: auto !important;
 }
 
 .course-description {
