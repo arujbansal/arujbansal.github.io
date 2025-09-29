@@ -386,12 +386,16 @@ span.course-link:hover, .course-link:hover {
 }
 
 /* Remove underlines only from TA'd courses in the teaching section */
-.teaching-list .course-link {
+.teaching-list .course-subitem .course-link,
+.teaching-list .course-subitem span.course-link {
   text-decoration: none !important;
+  text-decoration-color: transparent !important;
 }
 
-.teaching-list .course-link:hover {
+.teaching-list .course-subitem .course-link:hover,
+.teaching-list .course-subitem span.course-link:hover {
   text-decoration: none !important;
+  text-decoration-color: transparent !important;
 }
 
 .profile-name {
@@ -605,6 +609,8 @@ span.course-link:hover, .course-link:hover {
   color: var(--text-secondary);
   margin-bottom: 0.75rem;
   font-weight: 500;
+  display: flex;
+  align-items: center;
 }
 
 .course-details {
@@ -674,14 +680,12 @@ span.course-link:hover, .course-link:hover {
 
 .youtube-icon {
   margin-right: 0.25rem;
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  vertical-align: middle;
 }
 
 .youtube-icon svg {
   transition: var(--transition-smooth);
-  display: block;
 }
 
 .youtube-link:hover .youtube-icon svg {
