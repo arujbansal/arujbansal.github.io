@@ -673,24 +673,20 @@ span.course-link:hover, .course-link:hover {
 }
 
 .youtube-icon {
-  color: #ff0000 !important;
   margin-right: 0.25rem;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: baseline;
   line-height: 1;
 }
 
 .youtube-icon svg {
-  fill: #ff0000 !important;
-  color: #ff0000 !important;
   transition: var(--transition-smooth);
-  vertical-align: middle;
+  vertical-align: -2px;
   display: inline-block;
 }
 
 .youtube-link:hover .youtube-icon svg {
   fill: #cc0000 !important;
-  color: #cc0000 !important;
 }
 
 .course-description {
