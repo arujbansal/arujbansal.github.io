@@ -609,16 +609,11 @@ span.course-link:hover, .course-link:hover {
   text-align: center !important;
 }
 
-.teaching-list .course-item .course-code {
-  font-size: 0.9rem !important;
-  color: var(--text-secondary) !important;
-  margin-bottom: 0.75rem !important;
-  font-weight: 500 !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  line-height: 1.5 !important;
-  width: 100% !important;
+.course-code {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+  font-weight: 500;
 }
 
 .course-details {
@@ -686,36 +681,6 @@ span.course-link:hover, .course-link:hover {
   color: var(--text-primary);
 }
 
-.youtube-icon {
-  margin-right: 0.25rem !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 16px !important;
-  height: 16px !important;
-  line-height: 1 !important;
-  vertical-align: middle !important;
-}
-
-.youtube-icon svg {
-  transition: var(--transition-smooth);
-  width: 16px !important;
-  height: 16px !important;
-  display: block !important;
-}
-
-.youtube-link:hover .youtube-icon svg {
-  fill: #cc0000 !important;
-}
-
-.teaching-list .course-item .course-code .subscriber-count {
-  font-style: italic !important;
-  color: var(--text-tertiary) !important;
-  font-size: 0.85rem !important;
-  margin-left: auto !important;
-  text-align: right !important;
-  flex-shrink: 0 !important;
-}
 
 .course-description {
   margin-top: 0.5rem;

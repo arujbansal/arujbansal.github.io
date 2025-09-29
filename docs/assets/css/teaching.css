@@ -1,0 +1,56 @@
+/* Teaching Section Specific Styles */
+
+/* Course item headings - centered */
+.teaching-list .course-name {
+  text-align: center;
+}
+
+/* Remove underlines from TA course links only */
+.teaching-list .course-link {
+  text-decoration: none;
+}
+
+.teaching-list .course-link:hover {
+  text-decoration: none;
+}
+
+/* YouTube section layout */
+.course-code {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* YouTube icon styling */
+.youtube-icon {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+.youtube-icon svg {
+  width: 16px;
+  height: 16px;
+  fill: #ff0000;
+}
+
+.youtube-icon svg:hover {
+  fill: #cc0000;
+}
+
+/* Left side of YouTube line */
+.youtube-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Right side - subscriber count */
+.subscriber-count {
+  font-style: italic;
+  color: var(--text-tertiary);
+  font-size: 0.85rem;
+  text-align: right;
+}
