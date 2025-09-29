@@ -385,17 +385,21 @@ span.course-link:hover, .course-link:hover {
   text-decoration-color: var(--text-primary) !important;
 }
 
-/* Remove underlines only from TA'd courses in the teaching section */
-.teaching-list .course-subitem .course-link,
-.teaching-list .course-subitem span.course-link {
+/* Remove underlines only from TA'd courses in the teaching section - MAXIMUM SPECIFICITY */
+.teaching-column .teaching-list .course-item .course-details .course-subitem a span.course-link,
+.teaching-column .teaching-list .course-item .course-details .course-subitem a .course-link {
   text-decoration: none !important;
   text-decoration-color: transparent !important;
+  text-decoration-line: none !important;
+  border-bottom: none !important;
 }
 
-.teaching-list .course-subitem .course-link:hover,
-.teaching-list .course-subitem span.course-link:hover {
+.teaching-column .teaching-list .course-item .course-details .course-subitem a:hover span.course-link,
+.teaching-column .teaching-list .course-item .course-details .course-subitem a:hover .course-link {
   text-decoration: none !important;
   text-decoration-color: transparent !important;
+  text-decoration-line: none !important;
+  border-bottom: none !important;
 }
 
 .profile-name {
@@ -609,8 +613,10 @@ span.course-link:hover, .course-link:hover {
   color: var(--text-secondary);
   margin-bottom: 0.75rem;
   font-weight: 500;
-  display: flex;
-  align-items: center;
+  display: flex !important;
+  align-items: center !important;
+  line-height: 1.5 !important;
+  gap: 0.25rem !important;
 }
 
 .course-details {
@@ -679,13 +685,21 @@ span.course-link:hover, .course-link:hover {
 }
 
 .youtube-icon {
-  margin-right: 0.25rem;
-  display: flex;
-  align-items: center;
+  margin-right: 0.25rem !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 16px !important;
+  height: 16px !important;
+  line-height: 1 !important;
+  vertical-align: middle !important;
 }
 
 .youtube-icon svg {
   transition: var(--transition-smooth);
+  width: 16px !important;
+  height: 16px !important;
+  display: block !important;
 }
 
 .youtube-link:hover .youtube-icon svg {
