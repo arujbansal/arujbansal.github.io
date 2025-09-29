@@ -606,17 +606,19 @@ span.course-link:hover, .course-link:hover {
   font-weight: 600;
   color: var(--text-primary);
   margin-bottom: 0.3rem;
+  text-align: center !important;
 }
 
-.course-code {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  margin-bottom: 0.75rem;
-  font-weight: 500;
+.teaching-list .course-item .course-code {
+  font-size: 0.9rem !important;
+  color: var(--text-secondary) !important;
+  margin-bottom: 0.75rem !important;
+  font-weight: 500 !important;
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
   line-height: 1.5 !important;
+  width: 100% !important;
 }
 
 .course-details {
@@ -706,11 +708,13 @@ span.course-link:hover, .course-link:hover {
   fill: #cc0000 !important;
 }
 
-.subscriber-count {
+.teaching-list .course-item .course-code .subscriber-count {
   font-style: italic !important;
   color: var(--text-tertiary) !important;
   font-size: 0.85rem !important;
   margin-left: auto !important;
+  text-align: right !important;
+  flex-shrink: 0 !important;
 }
 
 .course-description {
