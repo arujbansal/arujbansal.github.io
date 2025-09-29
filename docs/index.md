@@ -143,7 +143,7 @@ layout: default
                                 <a href="https://courses.cs.duke.edu/spring25/compsci310/">2. <span class="course-link">COMPSCI 310 Operating Systems, Spring '25</span></a>
                                 <div class="course-award">Outstanding Teaching Assistant Award</div>
                             </div>
-                            <div class="course-subitem"><a href="https://courses.cs.duke.edu/spring25/compsci356/">3. <span class="course-link">COMPSCI 356 Computer Networks, Spring '25</span></a></div>
+                            <div class="course-subitem"><a href="https://courses.cs.duke.edu/spring25/compsci356/">3. <span class="course-link">COMPSCI 356 Computer Network Architecture, Spring '25</span></a></div>
                             <div class="course-subitem"><a href="https://sites.duke.edu/compsci_201_001_sp24/">4. <span class="course-link">COMPSCI 201 Data Structures and Algorithms, Spring '24</span></a></div>
                         </div>
                     </div>

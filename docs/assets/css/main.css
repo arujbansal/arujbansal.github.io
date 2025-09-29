@@ -674,15 +674,14 @@ span.course-link:hover, .course-link:hover {
 
 .youtube-icon {
   margin-right: 0.25rem;
-  display: inline-block;
-  vertical-align: baseline;
-  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
 }
 
 .youtube-icon svg {
   transition: var(--transition-smooth);
-  vertical-align: -2px;
-  display: inline-block;
+  display: block;
 }
 
 .youtube-link:hover .youtube-icon svg {
