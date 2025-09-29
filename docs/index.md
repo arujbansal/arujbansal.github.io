@@ -39,12 +39,12 @@ layout: default
 
                 <div class="work-description">
                     <p>
-                    I'm interested in algorithms and systems. In high school, I actively participated in programming competitions and reached the International Olympiad in Informatics Training Camp in India. Then, I took introductory computer architecture at Duke and got super interested in systems. My favorite classes at Duke include <a href="https://sites.google.com/view/randomized-algorithms/home" target="_blank" rel="noopener noreferrer"><span class="course-link">Randomized Algorithms</span></a>, <a href="https://cs.duke.edu/courses/compiler-construction-0" target="_blank" rel="noopener noreferrer"><span class="course-link">Compiler Construction</span></a>, <a href="https://apexlab-duke.github.io/cs550-advcomparch-fa2024/" target="_blank" rel="noopener noreferrer"><span class="course-link">Advanced Computer Architecture I</span></a>, and <a href="https://courses.cs.duke.edu/spring25/compsci590.5/index.html" target="_blank" rel="noopener noreferrer"><span class="course-link">Systems for Machine Learning</span></a>.
+                    I'm interested in algorithms and systems. In high school, I actively participated in programming competitions and reached the International Olympiad in Informatics Training Camp in India. Then, I took introductory computer architecture at Duke and got super interested in systems. The best Duke classes I've taken are <a href="https://sites.google.com/view/randomized-algorithms/home" target="_blank" rel="noopener noreferrer"><span class="course-link">Randomized Algorithms</span></a>, <a href="https://cs.duke.edu/courses/compiler-construction-0" target="_blank" rel="noopener noreferrer"><span class="course-link">Compiler Construction</span></a>, <a href="https://apexlab-duke.github.io/cs550-advcomparch-fa2024/" target="_blank" rel="noopener noreferrer"><span class="course-link">Advanced Computer Architecture I</span></a>, and <a href="https://courses.cs.duke.edu/spring25/compsci590.5/index.html" target="_blank" rel="noopener noreferrer"><span class="course-link">Systems for Machine Learning</span></a>.
                     </p>
 
-                    <!-- <p>
-                        
-                    </p> -->
+                    <p>
+                        Other interests include playing the electric guitar.
+                    </p>
                 </div>
 
             </div>
@@ -150,7 +150,7 @@ layout: default
 
                     <div class="course-item">
                         <div class="course-name">Competitive Programming Algorithms Lectures</div>
-                        <div class="course-code"><span class="youtube-icon">🎥</span> <a href="https://www.youtube.com/@AlgorithmsConquered" class="youtube-link"><span class="course-link">Algorithms Conquered</span></a> (3,000 subscribers)</div>
+                        <div class="course-code"><span class="youtube-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></span> <a href="https://www.youtube.com/@AlgorithmsConquered" class="youtube-link"><span class="course-link">Algorithms Conquered</span></a> (3,000 subscribers)</div>
                     </div>
                 </div>
             </div>

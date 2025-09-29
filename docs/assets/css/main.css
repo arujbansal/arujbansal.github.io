@@ -385,6 +385,15 @@ span.course-link:hover, .course-link:hover {
   text-decoration-color: var(--text-primary) !important;
 }
 
+/* Remove underlines only from TA'd courses in the teaching section */
+.teaching-list .course-link {
+  text-decoration: none !important;
+}
+
+.teaching-list .course-link:hover {
+  text-decoration: none !important;
+}
+
 .profile-name {
   font-size: 1.4rem;
   font-weight: 700;
@@ -664,9 +673,20 @@ span.course-link:hover, .course-link:hover {
 }
 
 .youtube-icon {
-  color: var(--text-secondary);
-  margin-right: 0.25rem;
-  font-size: 0.9rem;
+  color: #ff0000;
+  margin-right: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.youtube-icon svg {
+  transition: var(--transition-smooth);
+  color: #ff0000;
+}
+
+.youtube-link:hover .youtube-icon svg {
+  color: #cc0000;
 }
 
 .course-description {
